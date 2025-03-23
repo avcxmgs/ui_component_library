@@ -12,6 +12,11 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "echo \"[Husky] pre-commit\""
+    }
+  },
   "dependencies": {
     "husky": "^9.1.7",
     "react-dom": "^19.0.0",
