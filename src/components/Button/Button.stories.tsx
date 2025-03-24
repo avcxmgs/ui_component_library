@@ -1,19 +1,18 @@
-import React from 'react';
-import type { Meta, StoryObj } from '@storybook/react';
+import React from "react";
+import type { Meta, StoryObj } from "@storybook/react";
 
-import Button from './Button';
+import Button from "./Button";
 
 const meta = {
-  title: 'Components/Button',
+  title: "Components/Button",
   component: Button,
   parameters: {
-    layout: 'centered',
+    layout: "centered",
   },
   argTypes: {
-    children: { control: 'text' },
-    disabled: { control: 'boolean' },
+    children: { control: "text" },
+    disabled: { control: "boolean" },
   },
-
 } satisfies Meta<typeof Button>;
 
 export default meta;
@@ -21,14 +20,14 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    children: 'Button',
+    children: "Button",
     disabled: false,
   },
 };
 
 export const Disabled: Story = {
-    args: {
-      children: 'Disabled Button',
-      disabled: true,
-    },
-  };
+  args: {
+    children: "Disabled Button",
+    disabled: true,
+  },
+};

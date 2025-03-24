@@ -1,5 +1,5 @@
-export interface RadioButtonProps{
-    label: string;
-    checked?: boolean;
-    disabled?: boolean;
+export interface RadioButtonProps {
+  label: string;
+  checked?: boolean;
+  disabled?: boolean;
 }

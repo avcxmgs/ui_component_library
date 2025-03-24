@@ -1,19 +1,18 @@
-import React from 'react';
-import type { Meta, StoryObj } from '@storybook/react';
+import React from "react";
+import type { Meta, StoryObj } from "@storybook/react";
 
-import Text from './Text';
+import Text from "./Text";
 
 const meta = {
-  title: 'Components/Text',
+  title: "Components/Text",
   component: Text,
   parameters: {
-    layout: 'centered',
+    layout: "centered",
   },
   argTypes: {
-    children: { control: 'text' },
-    disabled: { control: 'boolean' },
+    children: { control: "text" },
+    disabled: { control: "boolean" },
   },
-
 } satisfies Meta<typeof Text>;
 
 export default meta;
@@ -21,14 +20,14 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    children: 'Text Area',
+    children: "Text Area",
     disabled: false,
   },
 };
 
 export const Disabled: Story = {
-    args: {
-      children: 'Disabled Text Area',
-      disabled: true,
-    },
-  };
+  args: {
+    children: "Disabled Text Area",
+    disabled: true,
+  },
+};

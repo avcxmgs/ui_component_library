@@ -1,5 +1,5 @@
-export interface ImgProps{
-    src: string;
-    alt: string;
-    disabled?: boolean;
+export interface ImgProps {
+  src: string;
+  alt: string;
+  disabled?: boolean;
 }

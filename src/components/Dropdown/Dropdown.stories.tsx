@@ -1,19 +1,18 @@
-import React from 'react';
-import type { Meta, StoryObj } from '@storybook/react';
+import React from "react";
+import type { Meta, StoryObj } from "@storybook/react";
 
-import Dropdown from './Dropdown';
+import Dropdown from "./Dropdown";
 
 const meta = {
-  title: 'Components/Dropdown',
+  title: "Components/Dropdown",
   component: Dropdown,
   parameters: {
-    layout: 'centered',
+    layout: "centered",
   },
   argTypes: {
-    items: { control: 'object'},
-    disabled: { control: 'boolean' },
+    items: { control: "object" },
+    disabled: { control: "boolean" },
   },
-
 } satisfies Meta<typeof Dropdown>;
 
 export default meta;
@@ -22,21 +21,21 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   args: {
     items: [
-        {value: 'd1', label: 'Default 1'},
-        {value: 'd2', label: 'Default 2'},
-        {value: 'd3', label: 'Default 3'}
+      { value: "d1", label: "Default 1" },
+      { value: "d2", label: "Default 2" },
+      { value: "d3", label: "Default 3" },
     ],
     disabled: false,
   },
 };
 
 export const Disabled: Story = {
-    args: {
+  args: {
     items: [
-        {value: 'd1', label: 'Default 1'},
-        {value: 'd2', label: 'Default 2'},
-        {value: 'd3', label: 'Default 3'}
+      { value: "d1", label: "Default 1" },
+      { value: "d2", label: "Default 2" },
+      { value: "d3", label: "Default 3" },
     ],
-      disabled: true,
-    },
-  };
+    disabled: true,
+  },
+};
