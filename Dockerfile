@@ -1,6 +1,6 @@
 FROM node:18-alpine
 
-WORKDIR /santos_margareth_ui_garden
+WORKDIR /santos_margareth_ui_garden_build_checks
 
 COPY package.json .
 
