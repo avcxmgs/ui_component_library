@@ -1,4 +1,4 @@
-import React from "reac";
+import React from "react";
 import styled from "styled-components";
 import { ButtonProps } from "./Button.types";
 
