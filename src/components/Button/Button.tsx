@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { ButtonProps } from "./Button.types";
 
 const StyledButton = styled.button<ButtonProps>`
-  background-color: ${({ disabled }) => (disabled ? "gray" : "pink")};
+               background-color: ${({ disabled }) => (disabled ? "gray" : "pink")};
   color: white;
   font-size: 16px;
   border: none;
